@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		
-		<script> 
-			$(function(){
-				$("head").load("head.html");
-				$("#header").load("header.html");
-				$("#sidebar").load("sidebar.html");
 
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="javascripts/main.js"></script>
+        
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+        
+        <title>List of Publications</title>
+
+        <script> 
+            $(function(){
+                $("#header").load("header.html");
+                $("#sidebar").load("sidebar.html");
 				$.ajax({
 					url:"list.html",
 					success:function(data){
 						$("#main-content").append($(data));
-						//console.log($("#main-content").html());
 					}
 				});
-
-			});
+            });
 		</script>
-		
+
 	</head>
 
 	<body>
@@ -34,19 +45,9 @@
 				</aside>
 
 				<section id="main-content">
-					<h1>
-						Accepted:
-					</h1>
-					<p>
-					Tian Huang, Yongxin Zhu, Yafei Wu, and Weiwei Shi. J-distance Discord: An Improved Time Series Discord Definition and Discovery Method. The 15th <em>International Conference on Data Mining </em> (ICDM) Workshops, 2015
-					</p>
-					<p>
-					Tian Huang, Yongxin Zhu, Yishu Mao, Xingyang Li, Mengyun Liu, Yafei Wu, Yajun Ha and Gillian Dobbie. Parallel Discord Discovery. The 20th <em>Pacific Asia Conference on Knowledge Discovery and Data Mining</em>  (PAKDD), 2016
-					</p>
-
-					<h1>
-						Published:
-					</h1>
+					<h2>
+						List of publications:
+					</h2>
 				</section>
 	
 			</div>

@@ -21,6 +21,11 @@
 						$("body").prepend($(data));
 					}
 				});
+				$.ajax({url:"footer.html",
+					success:function(data){
+						$("body").append($(data));
+					}
+				});
 			});
 		</script>
 

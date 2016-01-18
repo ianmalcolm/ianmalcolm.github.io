@@ -26,6 +26,11 @@
 						$("div.container div.row").append($(data));
 					}
 				});
+				$.ajax({url:"footer.html",
+					success:function(data){
+						$("body").append($(data));
+					}
+				});
 			});
 		</script>
 

@@ -1,38 +1,40 @@
-@inproceedings{huang2015jdistance,
-	title={J-distance Discord: An Improved Time Series Discord Definition and Discovery Method},
-	author={Huang, Tian and Zhu, Yongxin and Wu, Yafei and Shi, Weiwei},
-	booktitle={Data Mining Workshop (ICDMW), 2015 IEEE International Conference on},
-	pages={303--310},
-	year={2015},
-	doi={10.1109/ICDMW.2015.120},
-	pdf={paper/huang2015j.pdf},
+@ARTICLE{shi2016temporal, 
+	author={W. Shi and Y. Zhu and P. S. Yu and T. Huang and C. Wang and Y. Mao and Y. Chen}, 
+	journal={IEEE Access}, 
+	title={Temporal Dynamic Matrix Factorization for Missing Data Prediction in Large Scale Coevolving Time Series}, 
+	year={2016}, 
+	volume={4}, 
+	pages={6719-6732}, 
+	abstract={Data missing in collections of time series occurs frequently in practical applications and turns out to be a major menace to precise data analysis. However, most of the existing methods either might be infeasible or could be inefficient to predict the missing values in large-scale coevolving time series. Also, the evolving of time series needs to be handled properly to adapt to the temporal characteristic. Furthermore, more massive volume of data is generated in many areas than ever before. In this paper, we have taken up the challenge of missing data prediction in coevolving time series by employing temporal dynamic matrix factorization techniques. First, our approaches are optimally designed to largely utilize both the interior patterns of each time series and the information of time series across multiple sources to build an initial model. Based on the idea, we have imposed hybrid regularization terms to constrain the objective functions of matrix factorization. Then, temporal dynamic matrix factorization is proposed to effectively update the initial already trained models. In the process of dynamic matrix factorization, batch updating and fine-tuning strategies are also employed to build an effective and efficient model. Extensive experiments on real-world data sets and synthetic data set demonstrate that the proposed approaches can effectively improve the performance of missing data prediction. Even when the missing ratio reaches as high as 90\%, our proposed methods still show low prediction errors. Dynamic performance demonstrates that the methods can obtain satisfactory effectiveness and efficiency. Furthermore, we have also demonstrated how to take advantage of the high processing power of Apache Spark to perform missing data prediction in large-scale coevolving time series.}, 
+	keywords={data analysis;matrix decomposition;performance evaluation;time series;Apache Spark;batch updating strategies;data analysis;fine-tuning strategies;hybrid regularization terms;improve prediction errors;large scale coevolving time series;missing data prediction;missing values prediction;performance improvement;temporal characteristics;temporal dynamic matrix factorization;Big data;Data models;Linear programming;Matrix factorization;Predictive models;Time series analysis;Apache Spark;Matrix factorization;missing data prediction;time series}, 
+	doi={10.1109/ACCESS.2016.2606242}, 
+	ISSN={2169-3536}, 
+	month={},
+	pdf={paper\shi2016temporal.pdf},
 }
 
-@inproceedings{huang2016parallel,
-	title={Parallel Discord Discovery},
-	author={Huang, Tian and Zhu, Yongxin and Mao, Yishu and Li, Xingyang and Liu, Mengyun and Wu, Yafei and Ha, Yajun and Dobbie, Gillian },
-	booktitle={Advances in Knowledge Discovery and Data Mining},
-	series={Lecture Notes in Computer Science},
-	publisher={Springer International Publishing},
-	year={2015},
-	pdf={paper/huang2016parallel.pdf},
+@article{wang2016energy,
+	title = "An Energy-Efficient System on a Programmable Chip Platform for Cloud Applications ",
+	journal = "Journal of Systems Architecture ",
+	volume = "",
+	number = "",
+	pages = " - ",
+	year = "2016",
+	note = "",
+	issn = "1383-7621",
+	doi = "http://dx.doi.org/10.1016/j.sysarc.2016.11.009",
+	url = "http://www.sciencedirect.com/science/article/pii/S1383762116302247",
+	author = "Xu Wang and Yongxin Zhu and Yajun Ha and Meikang Qiu and Tian Huang and Xueming Si and Jiangxing Wu",
+	keywords = "Cloud computing",
+	keywords = "ECG classification",
+	keywords = "FPGA",
+	keywords = "Performance analysis",
+	keywords = "Reconfigurable architectures",
+	keywords = "Web server ",
+	abstract = "Abstract Traditional cloud service providers build large data-centers with a huge number of connected commodity computers to meet the ever-growing demand on performance. However, the growth potential of these data-centers is limited by their corresponding energy consumption and thermal issues. Energy efficiency becomes a key issue of building large-scale cloud computing centers. To solve this issue, we propose a standalone SOPC (System on a Programmable Chip) based platform for cloud applications. We improve the energy efficiency for cloud computing platforms with two techniques. First, we propose a massive-sessions optimized TCP/IP hardware stack using a macro-pipeline architecture. It enables the hardware acceleration of pipelining execution of network packet offloading and application level data processing. This achieves higher energy efficiency while maintaining peak performance. Second, we propose a online dynamic scheduling strategy. It can reconfigure or shut down FPGA nodes according to workload variance to reduce the runtime energy consumption in a standalone SOPC based reconfigurable cluster system. Two case studies including a webserver application and a cloud based ECG (electrocardiogram) classification application are developed to validate the effectiveness of the proposed platform. Evaluation results show that our SOPC based cloud computing platform can achieve up to 418X improvement in terms of energy efficiency over commercial cloud systems. ",
 }
 
-@article{huang2015anomaly,
-	title={Anomaly detection and identification scheme for VM live migration in cloud infrastructure},
-	author={Huang, Tian and Zhu, Yongxin and Wu, Yafei and Bressan, St{\'e}phane and Dobbie, Gillian},
-	journal={Future Generation Computer Systems},
-	volume={56},
-	pages={736--745},
-	year={2016},
-	publisher={North-Holland},
-	issn = {0167-739X},
-	doi={http://dx.doi.org/10.1016/j.future.2015.06.005},
-	url={http://www.sciencedirect.com/science/article/pii/S0167739X1500206X},
-	pdf={paper/huang2015anomaly.pdf},
-}
-
-@Article{shi2016integrated,
+@article{shi2016integrated,
 	author="Shi, Weiwei and Zhu, Yongxin and Huang, Tian and Sheng, Gehao and Lian, Yong and Wang, Guoxing and Chen, Yufeng",
 	title="An Integrated Data Preprocessing Framework Based on Apache Spark for Fault Diagnosis of Power Grid Equipment",
 	journal="Journal of Signal Processing Systems",
@@ -45,14 +47,57 @@
 	pdf={paper/shi2016integrated.pdf},
 }
 
+@inproceedings{huang2016parallel,
+	title={Parallel Discord Discovery},
+	author={Huang, Tian and Zhu, Yongxin and Mao, Yishu and Li, Xingyang and Liu, Mengyun and Wu, Yafei and Ha, Yajun and Dobbie, Gillian },
+	booktitle={Advances in Knowledge Discovery and Data Mining},
+	series={Lecture Notes in Computer Science},
+	publisher={Springer International Publishing},
+	year={2015},
+	pages={233--244},
+	keywords={Time series discord; Parallel; Large scale; In-memory computing}, 
+	abstract="Discords are the most unusual subsequences of a time series. Sequential discovery of discords is time consuming. As the scale of datasets increases unceasingly, datasets have to be kept on hard disk, which degrades the utilization of computing resources. Furthermore, the results discovered from segmentations of a time series are non-combinable, which makes discord discovery hard to parallelize. In this paper, we propose Parallel Discord Discovery (PDD), which divides the discord discovery problem in a combinable manner and solves its sub-problems in parallel. PDD accelerates discord discovery with multiple computing nodes and guarantees the correctness of the results. PDD stores large time series in distributed memory and takes advantage of in-memory computing to improve the utilization of computing resources. Experiments show that given 10 computing nodes, PDD is seven times faster than the sequential method HOTSAX. PDD is able to handle larger datasets than HOTSAX does. PDD achieves over 90\% utilization of computing resources, nearly twice as much as the disk-aware method does.",
+	doi={10.1007/978-3-319-31750-2_19},
+	pdf={paper/huang2016parallel.pdf},
+}
+
+@inproceedings{huang2015jdistance,
+	title={J-distance Discord: An Improved Time Series Discord Definition and Discovery Method},
+	author={Huang, Tian and Zhu, Yongxin and Wu, Yafei and Shi, Weiwei},
+	booktitle={Data Mining Workshop (ICDMW), 2015 IEEE International Conference on},
+	pages={303--310},
+	year={2015},
+	abstract={A time series discord is a subsequence that is maximally different to all the rest subsequences of a longer time series. Classic discord discovery has been used for detecting anomalous or interesting pattern, which usually represents the most unusual subsequences within a time series. However, an anomalous or interesting pattern may happen twice or more times so that any instance of this pattern is not distinct enough to be a top discord. To mitigate the issue, we propose an improved definition named J-distance discord (JDD), which incorporates the methodologies of KNN (k nearest neighbor) algorithm. JDD measures the similarity between a subsequence and its Jth most similar subsequence and ranks discords according to the similarity. We also propose a JDD discovery method to reduce the extra computational requirements brought by JDD definition. Experiments on synthetic and real world datasets show that JDD captures more de-facto anomalous and interesting patterns compared to the results of the original definition of discord. Besides, the JDD discovery method is as fast as the classic discord discovery method in terms of computational efficiency.},
+	issn={2375-9259},
+	doi={10.1109/ICDMW.2015.120},
+	pdf={paper/huang2015j.pdf},
+}
+
+@article{huang2015anomaly,
+	title={Anomaly detection and identification scheme for VM live migration in cloud infrastructure},
+	author={Huang, Tian and Zhu, Yongxin and Wu, Yafei and Bressan, St{\'e}phane and Dobbie, Gillian},
+	journal={Future Generation Computer Systems},
+	volume={56},
+	pages={736--745},
+	year={2016},
+	publisher={North-Holland},
+	abstract={Virtual machines (VM) offer simple and practical mechanisms to address many of the manageability problems of leveraging heterogeneous computing resources. VM live migration is an important feature of virtualization in cloud computing: it allows administrators to transparently tune the performance of the computing infrastructure. However, VM live migration may open the door to security threats. Classic anomaly detection schemes such as Local Outlier Factors (LOF) fail in detecting anomalies in the process of VM live migration. To tackle such critical security issues, we propose an adaptive scheme that mines data from the cloud infrastructure in order to detect abnormal statistics when VMs are migrated to new hosts. In our scheme, we extend classic Local Outlier Factors (LOF) approach by defining novel dimension reasoning (DR) rules as DR-LOF to figure out the possible sources of anomalies. We also incorporate Symbolic Aggregate ApproXimation (SAX) to enable timing information exploration that LOF ignores. In addition, we implement our scheme with an adaptive procedure to reduce chances of performance instability. Compared with LOF that fails in detecting anomalies in the process of VM live migration, our scheme is able not only to detect anomalies but also to identify their possible sources, giving cloud computing operators important clues to pinpoint and clear the anomalies. Our scheme further outperforms other classic clustering tools in WEKA (Waikato Environment for Knowledge Analysis) with higher detection rates and lower false alarm rate. Our scheme would serve as a novel anomaly detection tool to improve security framework in VM management for cloud computing.},
+	issn={0167-739X},
+	doi={10.1016/j.future.2015.06.005},
+	url={http://www.sciencedirect.com/science/article/pii/S0167739X1500206X},
+	pdf={paper/huang2015anomaly.pdf},
+}
+
 @article{sha2015statistical,
 	title={Statistical Learning for Anomaly Detection in Cloud Server Systems: A Multi-Order Markov Chain Framework},
 	author={Sha, Wenyao and Zhu, Yongxin and Chen, Min and Huang, Tian},
 	journal={IEEE Transactions on Cloud Computing},
 	publisher={IEEE},
 	year={2015},
+	abstract={As a major strategy to ensure the safety of IT infrastructure, anomaly detection plays a more important role in cloud computing platform which hosts the entire applications and data. On top of the classic Markov chain model, we proposed in this paper a feasible multi-order Markov chain based framework for anomaly detection. In this approach, both the high-order Markov chain and multivariate time series are adopted to compose a scheme described in algorithms along with the training procedure in the form of statistical learning framework. To curb time and space complexity, the algorithms are designed and implemented with non-zero value table and logarithm values in initial and transition matrices. For validation, the series of system calls and the corresponding return values are extracted from classic Defense Advanced Research Projects Agency (DARPA) intrusion detection evaluation data set to form a two-dimensional test input set. The testing results show that the multi-order approach is able to produce more effective indicators: in addition to the absolute values given by an individual single-order model, the changes in ranking positions of outputs from different-order ones also correlate closely with abnormal behaviours.},
 	doi={10.1109/TCC.2015.2415813},
 	url={http://doi.ieeecomputersociety.org/10.1109/TCC.2015.2415813},
+	pdf={paper/sha2015statistical.pdf},
 }
 
 @INPROCEEDINGS{yang2015provenance, 
@@ -62,17 +107,10 @@
 	year={2015}, 
 	pages={119-124}, 
 	keywords={data provenance; water contaminant; foodchain; modelling}, 
+	abstract={Water contaminants are among the critical sources of emerging pollutants, such as environmental endocrine concentrated in fishes and shrimps. Provenance information, describing the source and the route of transmission of pollutants, is important for environmental government to mitigate the threat of water contaminants in our urbanized society. However, existing provenance methods are not able to detect the source of these emerging pollutants due to movement of creatures who bio-magnifies concentrated environmental endocrine over a detectable level while the emerging pollutants in moving water are usually lower than a detectable level. To tackle the critical provenance issue, we propose an intelligent scheme by mining fish examination results or reservoir sensor readings along food chains to detect contaminants and provenance sources. Our scheme is capable of identifying the existence of contaminants, the possible sources as well as the provenance process.},
 	doi={10.1109/UKSim.2015.15}, 
 	month={March},
 	pdf={paper/yang2015provenance.pdf},
-}
-
-@article{zou2011analysis,
-	title={Analysis of new architecture fusing CPU and GPU},
-	author={ZOU, Zhi-hai and SHEN, Xiang and HUANG, Tian and ZHU, Yong-xin},
-	journal={Journal of Computer Applications},
-	pages={S1},
-	year={2011}
 }
 
 @article{huang2013extending,
@@ -84,6 +122,7 @@
 	pages={305--319},
 	year={2013},
 	publisher={Springer US},
+	abstract={Multicore chips are emerging as the mainstream solution for high performance computing. Generally, communication overheads cause large performance degradation in multi-core collaboration. Interconnects in large scale are needed to deal with these overheads. Amdahl’s and Gustafson’s law have been applied to multi-core chips but inter-core communication has not been taken into account. In this paper, we introduce interconnection into Amdahl’s and Gustafson’s law so that these laws work more precisely in the multi-core era. We further propose an area cost model and analyse our speedup models under area constraints. We find optimized parameters according to our speedup model. These parameters provide useful feedbacks to architects at an initial phase of their designs. We also present a case study to show the necessity of incorporating interconnection into Amdahl’s and Gustafson’s law.},
 	url={http://dx.doi.org/10.1007/s11227-013-0908-9},
 	doi={10.1007/s11227-013-0908-9},
 	keywords={Amdahl's law; Gustafson's law; Interconnection; Multi-core processor; Chip area; Model},
@@ -102,6 +141,7 @@
 	publisher = {IEEE Computer Society},
 	address = {Washington, DC, USA},
 	numpages = {6},
+	abstract={One of the most attractive things about cloud computing from the perspective of business people is that it provides an effective means to outsource IT. The behaviors of business applications on cloud are constantly evolving due to technical upgrading, cloud migration as well as social outbreaks. These changes bring the challenge of detecting anomalies during the change of applications on cloud. LOF (Local Outlier Factor) algorithm has already been proven as the most promising outlier detection method for detecting network intrusions. To improve the performance of detection, LOF needs a complete set of normal behaviors of business applications, which is usually not available in cloud computing. We present an adaptive anomaly detection scheme for cloud computing based on LOF. Our scheme learns behaviors of applications both in training and detecting phase. It is adaptive to the change during detecting. The adaptability of our scheme reduces demand of efforts on collecting training data before detecting. It also enables the ability to detect contextual anomalies. Experimental results show that our scheme can effectively detect contextual anomalies with relatively low computational overhead.},
 	doi={10.1109/COMPSACW.2013.28}, 
 	acmid = {2546668},
 	keywords = {anomaly detection, Cloud Computing, LOF, adaptive, contextual anomaly},
@@ -121,11 +161,13 @@
 	publisher = {IEEE Computer Society},
 	address = {Washington, DC, USA},
 	numpages = {8},
+	abstract={Cloud computing operators provide flexible, convenient, and affordable means to access public and private services. Virtual machine (VM) live migration, as an important feature of virtualization technique in cloud computing, ensures high efficiency and performance of computing infrastructure, while it stays transparent to clients. However, VM live migration is observed to cover anomalies due to their statistical similarity. To tackle the critical security issue, in this work, we propose an intelligent scheme to mine statistical data from cloud infrastructure to detect anomalies even if VMs are migrated to a new host with different infrastructure settings. In addition to detection of the existence of anomalies, our scheme is capable of identifying the possible sources of anomalies, which gives administrators clues to pinpoint and clear the anomalies.},
 	doi = {10.1109/ICTAI.2013.68},
 	acmid = {2572821},
 	isbn = {978-1-4799-2971-9},
 	url = {http://dx.doi.org/10.1109/ICTAI.2013.68},
 	keywords = {VM live migration, anomaly detection, anomaly reasoning, cloud computing, SAX, LOF},
+	pdf={paper/zhang2013intelligent.pdf},
 }
 }
 
@@ -139,8 +181,11 @@
 	publisher = {IEEE Computer Society},
 	address = {Los Alamitos, CA, USA},
 	volume = {0},
+	abstract={In the era of cloud computing, data centers are well-known to be bounded by the power wall issue. This issue lowers the profit of service providers and obstructs the expansions of data center's scale. As virtual machine's behavior was not explored sufficiently in classic data center's power-saving strategies, in this paper we address the power consumption issue in the setting of a virtualized data center. We propose an efficient power-aware resource scheduling strategy that reduces data center's power consumption effectively based on VM live migration which is a key technical feature of cloud computing. Our scheduling algorithm leverages the Xen platform and consolidates VM workloads periodically to reduce the number of running servers. To satisfy each VM's service level agreements, our strategy keeps adjusting VM placements between scheduling rounds. We developed a power-aware data center simulator to test our algorithm. The simulator runs in time domain and includes server's segmented linear power model. We validated our simulator using measured server power trace. Our simulation shows that compared with event-driven schedulers, our strategy improves data center power budget by 35\% for random workloads resembling web-requests, and improve data center power budget by 22.7\% for workloads exhibiting stable resource requirements like ScaLAPACK.},
 	issn = {1521-9097},
-	doi = {http://doi.ieeecomputersociety.org/10.1109/ICPADS.2013.27},
+	doi = {10.1109/ICPADS.2013.27},
+	url = {http://doi.ieeecomputersociety.org/10.1109/ICPADS.2013.27},
+	pdf={paper/zu2013efficient.pdf},
 }
 
 @inproceedings{sha2013multi,
@@ -153,10 +198,12 @@
 	publisher = {IEEE Computer Society},
 	address = {Washington, DC, USA},
 	numpages = {6},
+	abstract={This paper presents a feasible multi-order Markov chain based scheme for anomaly detection in server systems. In our approach, both the high-order Markov chain and multivariate time series are taken into account, along with the detailed design of training and testing algorithms. To evaluate its effectiveness, the Defense Advanced Research Projects Agency (DARPA) Intrusion Detection Evaluation Data Set is used as stimuli to our model, by which system calls and the corresponding return values form a two-dimensional input set. The calculation result shows that this approach is able to produce several effective indicators of anomalies. In addition to the absolute values given by an individual single-order model, we also notice a novelty unprecedented before, i.e., the changes in ranking positions of outputs from different-order ones also correlate closely with abnormal behaviours. Moreover, the analysis and application proves our approach's efficiency in consuming reasonable cost of time and storage.},
 	doi = {10.1109/COMPSACW.2013.12},
 	acmid = {2546624},
 	isbn = {978-1-4799-2159-1},
 	url = {http://dx.doi.org/10.1109/COMPSACW.2013.12},
+	pdf={paper/sha2013multi.pdf},
 } 
 
 @article{zhang2013case,
@@ -166,6 +213,7 @@
 	volume={2013},
 	year={2013},
 	publisher={Hindawi Publishing Corporation},
+	abstract={Accelerated growth of urban population in the world put incremental stresses on metropolitan cities. Smart city centric strategies are expected to comprise solutions to sustainable environment and urban life. Acting as an indispensable role in smart city, IoT (Internet of Things) connects the executive ability of the physical world and the intelligence of the computational world, aiming to enlarge the capabilities of things in real city and strengthen the practicality of functions in cyber world. One of the important application areas of IoT in cities is food industry. Municipality governors are withstanding all kinds of food safety issues and enduring the hardest time ever due to the lack of sufficient guidance and supervision. IoT systems help to monitor, analyze, and manage the real food industry in cities. In this paper, a smart sensor data collection strategy for IoT is proposed, which would improve the efficiency and accuracy of provenance with the minimized size of data set at the same time. We then present algorithms of tracing contamination source and back tracking potential infected food in the markets. Our strategy and algorithms are evaluated with a comprehensive evaluation case of this IoT system, which shows that this system performs well even with big data as well.},
 	doi = {10.1155/2013/382132},
 	url = {http://dx.doi.org/10.1155/2013/382132},
 	pdf={paper/zhang2013case.pdf},
@@ -183,6 +231,8 @@
 	doi = {http://doi.ieeecomputersociety.org/10.1109/CLOUD.2012.121},
 	publisher = {IEEE Computer Society},
 	address = {Los Alamitos, CA, USA},
+	pdf={paper/shu2012prototyping.pdf},
+	abstract={Cloud computing, a delivery of computing as a service mainly implying how to use utilities in our context, can be provided either at infrastructure, platform or software levels. The Desktop-as-a-Service (DaaS) paradigm, derives from the software level Software-as-a-Service (SaaS) paradigm, is drawing increasing interest because of its transformation from desktops into a cost-efficient, scalable and comfortable subscription service. Unlike most existing solutions delivering service with various protocols based on image transmitting in PC dominating environment, we present a DaaS with cloud server technologies on FPGA to address the problem of high power consumption and heavy network traffic. With the booming of mobile cloud computing, users can access the service on demand with smart phones or other portable devices like iPad or Amazon kindle as well as PC. Our system provides virtual desktop web pages written in HTML/JavaScript to avoid frequent image transmissions and reduce network traffic. To build the cloud prototype system, we combine Lightweight TCP/IP stack (LwIP) and Java Optimized Processor (JOP) to build a web server enabling dynamic web page interactions. Our system significantly saves volumes of data in transmission and network bandwidth. Analytical performance evaluation shows that on average, our system suffers only 25\% transmitting latency and saves 46\% of energy efficiency in comparison to other solutions. Our efficient DaaS based on FPGA explores new application of embedded web server in green cloud computing as well as new service paradigm of mobile cloud computing.},
 }
 
 @inproceedings{xie2012accurate,
@@ -193,6 +243,8 @@
 	year={2012},
 	month=dec,
 	organization={IEEE},
+	pdf={paper/xie2012accurate.pdf},
+	abstract={Albeit general purpose graphics processing unit (GPU) processor has gained strong momentums in high performance computing domain recently, power consumption stays as the critical constraint in GPU architectures. Among many efforts dedicated to power reduction, most existing power analytical models can achieve sufficient estimate accuracy for a new GPU architecture only after its layout or floor plan is finalized, when it is usually too late for software designers working on the new GPU architecture. This paper presents an accurate power model based on GPU native instructions to analyze and estimate the power consumption at an architecture level. Taking the latest FERMI GPU architecture as an illustrative example to apply our methods, our model is comprised of two parts, i.e. the computing section and the memory section. With an integrated view of the GPU architecture, our model is able to estimate the power consumption for the GPU architecture under a series of workloads with deviations less than 15\%. To the best of our knowledge, our model should outperform all existing analytical GPU power models in terms of accuracy.},
 }
 
 @inproceedings{shen2011implementing,
@@ -203,6 +255,8 @@
 	year={2011},
 	month=nov,
 	organization={IEEE},
+	pdf={paper/shen2011implementing.pdf},
+	abstract={In the era of cloud computing, web servers as the major channel in cloud computing need to be redesigned to meet performance and power constraints. Considerable efforts have been invested in web server distribution and web caching strategies, but very few efforts have been paid to improve hardware-favored web services. In this paper, we implement a Field Programmable Gate Array (FPGA) based embedded web server that can process simple dynamic web page in hardware. In our design, a light weight web server Lightweight IP (LwIP) is adopted as the basic implementation of TCP/IP networking stack. More importantly, we implement a Java Optimized Processor (JOP) as the hard core processor to directly support calculation required by dynamic web page interactions. The JOP processor is tightly coupled with the LwIP running on a soft core MicroBlaze to accelerate dynamic web page processing. We implement dynamic web pages to process matrix multiplication requests which are actually handled either by JOP or MicroBlaze as our testing case. In our experiment, the execution time by JOP is about one tenth of the time taken by MicroBlaze. As probably the first dynamic web page processing based on JOP in cloud computing domain, our implementation would be an interesting milestone to further improve efficiency of cloud computing.},
 }
 
 @inproceedings{yin2011efficient,
@@ -220,6 +274,8 @@
 	acmid = {2119100},
 	publisher = {IEEE Computer Society},
 	address = {Washington, DC, USA},
+	pdf={paper/yin2011efficient.pdf},
+	abstract={Due to power wall and slow performance improvement in a single core micro-architecture, multiple even many cores based processors rose as the main stream processor. Nevertheless, thermal threats regarding reliability and lifetime of processors are still among the major concerns which received much attention in terms of algorithms and hardware design to reduce processor temperature and keep application performance in recent years. In this paper, we propose and implement a thermal-aware Round-Robin scheduling algorithm for process migration in the Linux environment on a quad-core processor. Bearing designer's goals in mind, such as performance, load-balancing, and reliability, we managed to achieve much bigger temperature fall than previous results of Round-Robin scheduler on a dual-core processor as well as baseline Linux scheduler on a quad-core processor. Moreover, the performance loss due to scheduling overhead is modest in our approach. Our results indicate that thermal-aware scheduling is a valid approach to tackling thermal issues on multi-core processors. There will be increasing demand for thermal-aware scheduling as the number of cores on a single processor increases.},
 }
 
 @inproceedings{kong2011design,
@@ -230,6 +286,19 @@
 	year={2011},
 	month=nov,
 	organization={IEEE},
+	pdf={paper/kong2011design.pdf},
+	abstract={In the cloud computing era, internet resources are becoming ample and abundant; hence the rising gap between remote application users and the virtualization resources. Considerable efforts have been invested in distributed file system and web caching with different optimizing strategies to shrink and ultimately eliminate the gap, but few existing studies have combined the two together to enhance the performance of the web server systems. In this paper, we make a solid effort to reveal the feasibility of the integration. After challenging ourselves with significant difficulties in design, we manage to prototype an evaluation system which could bring higher throughput, lower response delay as well as integrated functionalities of file system, web caching mechanism and web services. Our experience in exploring the method of web accelerations will be taken as useful reference for researchers working on high performance web services and FPGA applications.},
+}
+
+@article{zou2011analysis,
+	title={Analysis of new architecture fusing CPU and GPU},
+	author={ZOU, Zhi-hai and SHEN, Xiang and HUANG, Tian and ZHU, Yong-xin},
+	journal={Journal of Computer Applications},
+	pages={S1},
+	year={2011},
+	keywords={Fusion architecture, Power consumption, Computing capacity},
+	abstract={When CPU and GPU work in coordination as separate chips,drawbacks such as high power consumption,large size,and low transmission speed can be observed.A merged chip would solve these issues.In this paper,the authors analyzed technical features of CPU and GPU to compare their computing capacity,and measure the performance by high-precision benchmarks.Then a new merger of CPU and GPU was described,utilizing low power processing unit for task allocation.According to the type of workload and input data size,the low power processing unit balanced the task partitions of the sequencing computing core and parallel computing cores array.For the different workload,the different cooperating modes were used to ensure efficient execution of data processing tasks on two types of cores.Performance assessment shows that the computation capacity and power consumption of the merged architecture are improved significantly.},
+	pdf={paper/zou2011analysis},
 }
 
 @inproceedings{zheng2010revealing,
@@ -240,6 +309,7 @@
 	year={2010},
 	organization={IEEE},
 	series = {CSE '10},
+	pdf={paper/zheng2010revealing.pdf},
 	isbn = {978-0-7695-4323-9},
 	numpages = {8},
 	url = {http://dx.doi.org/10.1109/CSE.2010.25},
@@ -247,6 +317,7 @@
 	acmid = {1932908},
 	publisher = {IEEE Computer Society},
 	address = {Washington, DC, USA},
+	abstract={FPGAs have been improved significantly in terms of performance and capacity over the last 20 years. The scale of FPGA based design also sparked off the demands for high-level synthesis to handle complicated applications. A well known intricate application is the FMM (Fast Multipole Method) algorithm of N-body problem, which is so complicated that it was not implemented on FPGA as reported in literature. In this paper, we take high level modeling and design tools, i.e. Simulink and System Generator to implement major modules in FMM algorithm to solve the N-Body problem on FPGA. Besides the impressive performance speedup on FPGA, we improve the efficiency by merging the circuits for the common logic among modules in the algorithm. Our experience in efficiently implementing the FMM algorithm will be taken as a useful reference for researchers working on FPGA applications as well as high performance computing.},
 }
 
 @inproceedings{que2010implementing,
@@ -264,5 +335,7 @@
 	acmid = {1901602},
 	publisher = {IEEE Computer Society},
 	address = {Washington, DC, USA},
+	pdf={paper/que2010implementing.pdf},
+	abstract={Xilinx and Mathworks jointly proposed System Generator (SysGen) and Simulink to accelerate development of DSP (digital signal processing) style applications on Field Programmable Gate Array (FPGA) chips. However, most of developments with Simulink and SysGen end at simulation stage without complete stand-alone implementation on FPGA since these tools do not come up with sufficient IO system libraries. In this paper, we present the process of implementing a full system to reconstruct CT (computed tomography) images on FPGA using Simulink and SysGen. In this process, we solve technical issues regarding algorithm mapping, design of additional modules, system IO library and resource allocation. Our experience will be taken as useful reference for researchers working on FPGA applications and high resolution medical image applications.},
 }
 

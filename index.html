@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta charset='utf-8'>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
-			<![endif]-->
-		
-		<title>Tian Huang's Homepage</title>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-		<script>
-			$(function(){
-				$.ajax({url:"header.html",
-					success:function(data){
-						$("body").prepend($(data));
-					}
-				});
-				$.ajax({url:"footer.html",
-					success:function(data){
-						$("body").append($(data));
-					}
-				});
-			});
-		</script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
 
-	</head>
+<title>Tian Huang</title>
 
-	<body>
+<script>
+$.get("navigation.html", function(data){
+		$("#nav-placeholder").replaceWith(data);
+		});
+$.get("footer.html", function(data){
+		$("#footer-placeholder").replaceWith(data);
+		});
+</script>
 
+</head>
+<body>
 
-		<div class="container">
-			<h3>Fixed Navbar</h3>
-			<div class="row">
-					<img src="images/me.jpg" style="margin:1em 1em 1em 0;width:25%;float:left;"/>
-				<div>
-					<h2>Tian Huang (黄田)</h2>
+<div id="nav-placeholder"></div>
+<div class="container">
 
-					<h3>Research associate</h3>
-					<p><a href="http://www.astro.phy.cam.ac.uk/">Cavendish Astrophysics</a></p>
-					<p><a href="http://www.cam.ac.uk/">University of Cambridge</a></p>
-					<p>Address: Battcock Centre for Experimental Astrophysics, Cavendish Laboratory, JJ Thomson Avenue, Cambridge</p>
-					<p>Postal code: CB3 0HE</p>
-					<p>Email: <a href="mailto:th523@cam.ac.uk">th523@cam.ac.uk</a></p>
-					<p>Email: <a href="mailto:th523@.mrao.cam.ac.uk">th523@mrao.cam.ac.uk</a></p>
+	<div class="row">
+		<h1><br></h1>
+	</div>
 
-					<h3>PhD degree</h3>
-					<p><a href="http://ic.sjtu.edu.cn">School of Microelectronics</a></p>
-					<p><a href="http://www.sjtu.edu.cn">Shanghai Jiao Tong University</a></p>
-					<p>Address: Room 209, Microelectronics Building, Shanghai Jiao Tong University, 800 Dongchuan Rd, Minhang District, Shanghai, China</p>
-					<p>Postal code: 200240</p>
-					<p>Email: <a href="mailto:ian_malcolm@sjtu.edu.cn">ian_malcolm@sjtu.edu.cn</a></p>
-				</div>
-			</div>
-			<div class="row">
-				<h3>Biography</h3>
-				<p>In March 2016, Tian Huang will graduate from <a href="http://ic.sjtu.edu.cn">School of Microelectronics</a> at <a href="http://www.sjtu.edu.cn">Shanghai Jiao Tong University</a>, where he completes his <a href="paper/huang2015large.pdf">thesis</a> under the supervision of Prof. <a href="https://sites.google.com/site/zhuyongxin">Yongxin Zhu</a>. His main research interest is Data Mining for time series, including time series big data indexing, anomaly detecting, computer architecture for time series data mining and statistical models for time series data. He has published 2 SCI journal and 15 EI conference papers. He has rich experience on software and hardware co-designing.</p>
-
-				<h3>Research interests</h3>
-				<p>My thesis work at <a href="http://ic.sjtu.edu.cn">School of Microelectronics</a> centered on data mining and computer architecture. I work on algorithms for retrieving valuable information from large scale datasets. One example is discovering frequent and rare patterns from large scale time series. Such information are important in several application areas, including anomaly detection, time series forecasting and bioinformatics. A second area of interest is exploring computer architectures for performance/latency/energy sensitive data mining algorithms and applications. For example, I exploited parallel computing platform to discover time series anomaly more quickly.</p>
-				<p>My internship experience at <a href="http://www.i2r.a-star.edu.sg/robotics/jointlab">I2R-BYD Joint Lab</a> develops my research interest in the application of Artificial Intelligence in Robotics. I am interested in low cost localization in GPS-dennied environment. One example is car driver uses his smart phone to navigate in underground constructions. I try to understand how map information can be used to improve localizaion. I am also interested in computer vision for autonomous driving, including acquiring odometry and speed from stereo vision, road segmentation and lane mark detection.</p>
-
-				<p><a class="btn btn-info" role="button" href="https://scholar.google.com/citations?user=tp6Ds9cAAAAJ&hl=en">Profile at Google Scholar</a></p>
-				<p><a class="btn btn-info" role="button" href="https://www.researchgate.net/profile/Tian_Huang3">Profile at ResearchGate</a></p>
-			</div>
+	<div class="row">
+		<img src="images/me.jpg" style="margin:1em 1em 1em 0;width:25%;float:left;"/>
+		<div>
+			<h2>Tian Huang (黄田)</h2>
+	
+			<h3>Research associate</h3>
+			<p><a href="http://www.astro.phy.cam.ac.uk/">Cavendish Astrophysics</a></p>
+			<p><a href="http://www.cam.ac.uk/">University of Cambridge</a></p>
+			<p>Address: F18, Battcock Centre for Experimental Astrophysics, Cavendish Laboratory, JJ Thomson Avenue, Cambridge CB3 0HE, UK</p>
+			<p>Email: <a href="mailto:th523@cam.ac.uk">th523@cam.ac.uk</a></p>
+			<p>Email: <a href="mailto:th523@.mrao.cam.ac.uk">th523@mrao.cam.ac.uk</a></p>
+			
+			<h3>PhD degree</h3>
+			<p><a href="http://ic.sjtu.edu.cn">School of Microelectronics</a></p>
+			<p><a href="http://www.sjtu.edu.cn">Shanghai Jiao Tong University</a></p>
+			<p>Address: Room 209, Microelectronics Building, 800 Dongchuan Rd, Minhang District, Shanghai, 200240, China</p>
+			<p>Email: <a href="mailto:ian_malcolm@sjtu.edu.cn">ian_malcolm@sjtu.edu.cn</a></p>
 		</div>
+	</div>
 
-	</body>
+	<div class="row">
+		<h3>Biography</h3>
+		<p>Tian Huang is Research Associate of Astrophysics Group, Cavendish Lab, University of Cambridge. In March 2016, he graduated from <a href="http://ic.sjtu.edu.cn">School of Microelectronics</a> at <a href="http://www.sjtu.edu.cn">Shanghai Jiao Tong University</a>, where he completes his <a href="paper/huang2015large.pdf">thesis</a> under the supervision of Prof. <a href="https://sites.google.com/site/zhuyongxin">Yongxin Zhu</a>. His main research interest is Data Mining for time series, including time series big data indexing, anomaly detecting, computer architecture for time series data mining and statistical models for time series data. He has published 3 SCI journal and 15 EI conference papers. He has rich experience on software and hardware co-designing.</p>
+		
+		<h3>Research interests</h3>
+		<p>My thesis work at <a href="http://ic.sjtu.edu.cn">School of Microelectronics</a> centered on data mining and computer architecture. I work on algorithms for retrieving valuable information from large scale datasets. One example is discovering frequent and rare patterns from large scale time series. Such information are important in several application areas, including anomaly detection, time series forecasting and bioinformatics. A second area of interest is exploring computer architectures for performance/latency/energy sensitive data mining algorithms and applications. For example, I exploited parallel computing platform to discover time series anomaly more quickly.</p>
+		<p>My internship experience at <a href="http://www.i2r.a-star.edu.sg/robotics/jointlab">I2R-BYD Joint Lab</a> develops my research interest in the application of Artificial Intelligence in Robotics. I am interested in low cost localization in GPS-dennied environment. One example is car driver uses his smart phone to navigate in underground constructions. I try to understand how map information can be used to improve localizaion. I am also interested in computer vision for autonomous driving, including acquiring odometry and speed from stereo vision, road segmentation and lane mark detection.</p>
+		
+		<p><a class="btn btn-info" role="button" href="https://scholar.google.com/citations?user=tp6Ds9cAAAAJ&hl=en">Profile at Google Scholar</a></p>
+		<p><a class="btn btn-info" role="button" href="https://www.researchgate.net/profile/Tian_Huang3">Profile at ResearchGate</a></p>
+	</div>
+</div>
 
+<div id="footer-placeholder"></div>
+
+</body>
 </html>
 

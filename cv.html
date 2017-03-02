@@ -1,123 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta charset='utf-8'>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<title>Resume</title>
+
+<script>
+$.get("navigation.html", function(data){
+		$("#nav-placeholder").replaceWith(data);
+		});
+$.get("footer.html", function(data){
+		$("#footer-placeholder").replaceWith(data);
+		});
+</script>
+
+</head>
+
+<body>
+<div id="nav-placeholder"></div>
+<div class="container">
+	
+	<div class="row">
+		<h1><br></h1>
+	</div>
+	
+	<div class="row">
+	
+		<h3>Education</h3>
+		<ul>
+			<li>PhD (Computer Science and Engineering) Shanghai Jiao Tong University, China, 2008- 2016</li>
+			<li>BSc (Electronic Science and Technology), Shanghai Jiao Tong University, China, 2004 - 2008</li>
+		</ul>
+		<h3>Research Experiences</h3>
 		
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
-			<![endif]-->
+		<ul>
+			<li>Research Associate (2016 - present) at Astrophysics Group, Cavendish Lab, University of Cambridge, UK</li>
+			<ul>
+				<li>Analyse digital signal from TPM (Tile Processing Module) of SKA (Square Kilometer Array) project.</li>
+			</ul>
+			<li>Master and PhD study (2008- 2016) at School of Microelectronics, Shanghai Jiao Tong University, China</li>
+			<ul>
+				<li>Dissertation: Find time series anomalies by finding rare patterns from large scale time series; Combine time series discord discovery and outlier detection to reduce the computational complexity of anomaly detection and to find underlying reason of anomalies; Detect time series outliers; Accelerate time series anomaly detection with parallelization.</li>
+				<li>Research in energy and resource efficient computer architecture: Accelerate FMM algorithm by designing Hardware pipeline; Optimize application specific computer architecture.</li>
+			</ul>
+			<li>Research assistant (2014 January - May) at School of Computing, National University of Singapore</li>
+			<ul>
+				<li>Research topic: Forecasting time series by combining similar time series in historical time series database.</li>
+			</ul>
+			<li>Research assistant (2015 October - 2016 April) at Institute for Infocomm Research, A*STAR, Singapore</li>
+			<ul>
+				<li>Research topic: Indoor vehicle localization with dead reckoning and map on smartphone.</li>
+			</ul>
+		</ul>
 		
-		<title>Tian Huang's Homepage</title>
-
-		<script>
-			$(function(){
-				$.ajax({url:"header.html",
-					success:function(data){
-						$("body").prepend($(data));
-					}
-				});
-				$.ajax({url:"footer.html",
-					success:function(data){
-						$("body").append($(data));
-					}
-				});
-			});
-		</script>
-
-	</head>
-
-	<body>
-		<div class="container">
-			<h3>Fixed Navbar</h3>
-
-			<h3>Education</h3>
+		<h3>Selected publications</h3>
+		<ul>
+			<li>Tian Huang, Yongxin Zhu, Yajun Ha, Xu Wang, Meikang Qiu. A hardware pipeline with high energy and resource efficiency for FMM acceleration. ACM Transaction on Embedded Computing. (Accepted in Feb 2017)</li>
+			<li>Tian Huang, Yongxin Zhu, Yafei Wu, Stéphane Bressan, and Gillian Dobbie. Anomaly detection and identification scheme for vm live migration in cloud infrastructure. Future Generation Computer Systems, 56:736-745, 2016.</li>
+			<li>Tian Huang, Yongxin Zhu, Yafei Wu, and Weiwei Shi. J-distance discord: An improved time series discord definition and discovery method. In Data Mining (ICDM), 2015 IEEE International Conference on, pages 303-310, 2015</li>
+			<li>Tian Huang, Yongxin Zhu, Yishu Mao, Xingyang Li, Mengyun Liu, Yafei Wu, Yajun Ha, and Gillian Dobbie. Parallel discord discovery. In Advances in Knowledge Discovery and Data Mining, Lecture Notes in Computer Science. Springer International Publishing, 2015. (Accepted)</li>
+			<li>Tian Huang, Yan Zhu, Qiannan Zhang, Yongxin Zhu, Dongyang Wang, Meikang Qiu, and Lei Liu. An lof-based adaptive anomaly detection scheme for cloud computing. In Computer Software and Applications Conference Workshops (COMPSACW), 2013 IEEE 37th Annual, COMPSACW '13, pages 206-211, Washington, DC, USA, July 2013. IEEE, IEEE Computer Society.</li>
+			<li>Tian Huang, Yongxin Zhu, Meikang Qiu, Xiaojing Yin, and Xu Wang. Extending amdahl's law and gustafson's law by evaluating interconnections on multi-core processors. The Journal of Supercomputing, 66(1):305-319, 2013.</li>
+		</ul>
+		<h3>Project Experiences and Skills</h3>
+		<ul>
+			<li>Energy and Environmental Sustainability Solutions for Megacities (E2S2) by Shanghai Jiao Tong University (SJTU) and National University of Singapore (NUS) in Campus for Research Excellence and Technological Enterprise (CREATE) program of Singapore National Research Foundation (R-706-000-101-281 and R-252-000-496-281)</li>
 			<ul>
-				<li>PhD (Electronic Science and Technology) Shanghai Jiao Tong University, China, 2010 - 2016</li>
-				<li>MSc (Computer Architecture), Shanghai Jiao Tong University, China, 2008 - 2010</li>
-				<li>BSc (Electronic Science and Technology), Shanghai Jiao Tong University, China, 2004 - 2008</li>
+				<li>Develop an index for large scale time series with Java</li>
+				<li>Manage and analyse large scale time series in Hadoop File System with Scala/Spark</li>
+				<li>Optimizing resource allocation on water supply network against intentional attacks using Genetic Algorithm. Develop Genetic Algorithm with Matlab</li>
+				<li>Overlapping community detection in complex networks. Develop community detecting algorithm with C/C++</li>
 			</ul>
-			<h3>Research Experiences</h3>
-
+			<li>Development of new-concept, high-efficiency computer architecture and system. National High-Technology Research and Development Program of China (863 Program, No.2009AA012201 CFA2009SHJD01 2009-2011, No.2009AA012201 CFA2011SHJD01 2011-2012, No.2015AA050204 2015-2018)</li>
 			<ul>
-				<li>Master study (2008 - 2010) and PhD study (2010 - 2016) at School of Microelectronics, Shanghai Jiao Tong University, China</li>
-				<ul>
-					<li>Dissertation: Find time series anomalies by finding rare patterns from large scale time series; Combine time series discord discovery and outlier detection to reduce the computational complexity of anomaly detection and to find underlying reason of anomalies; Detect time series outliers; Accelerate time series anomaly detection with parallelization.</li>
-					<li>Research in energy and resource efficient computer architecture: Accelerate FMM algorithm by designing Hardware pipeline; Optimize application specific computer architecture.</li>
-				</ul>
-				<li>Research assistant (2014 January - May) at School of Computing, National University of Singapore</li>
-				<ul>
-					<li>Research topic: Forecasting time series by combining similar time series in historical time series database.</li>
-				</ul>
-				<li>Research assistant (2015 October - 2016 April) at Institute for Infocomm Research, A*STAR, Singapore</li>
-				<ul>
-					<li>Research topic: Indoor vehicle localization with dead reckoning and map on smartphone.</li>
-				</ul>
+				<li>Prototype hardware pipelines and accelerators with Matlab Simulink and Xilinx System Generator</li>
+				<li>Implement embedded systems and software applications on FPGA</li>
+				<li>Develop Java Optimized Processor with Verilog and VHDL</li>
 			</ul>
-
-			<h3>Selected publications</h3>
+			<li>Hydrogen Epoch of Reionization Array (HERA)</li>
 			<ul>
-				<li>Tian Huang, Yongxin Zhu, Yafei Wu, Stéphane Bressan, and Gillian Dobbie. Anomaly detection and identification scheme for vm live migration in cloud infrastructure. Future Generation Computer Systems, 56:736-745, 2016.</li>
-				<li>Tian Huang, Yongxin Zhu, Yafei Wu, and Weiwei Shi. J-distance discord: An improved time series discord definition and discovery method. In Data Mining (ICDM), 2015 IEEE International Conference on, pages 303-310, 2015</li>
-				<li>Tian Huang, Yongxin Zhu, Yishu Mao, Xingyang Li, Mengyun Liu, Yafei Wu, Yajun Ha, and Gillian Dobbie. Parallel discord discovery. In Advances in Knowledge Discovery and Data Mining, Lecture Notes in Computer Science. Springer International Publishing, 2015. (Accepted)</li>
-				<li>Tian Huang, Yan Zhu, Qiannan Zhang, Yongxin Zhu, Dongyang Wang, Meikang Qiu, and Lei Liu. An lof-based adaptive anomaly detection scheme for cloud computing. In Computer Software and Applications Conference Workshops (COMPSACW), 2013 IEEE 37th Annual, COMPSACW '13, pages 206-211, Washington, DC, USA, July 2013. IEEE, IEEE Computer Society.</li>
-				<li>Tian Huang, Yongxin Zhu, Meikang Qiu, Xiaojing Yin, and Xu Wang. Extending amdahl's law and gustafson's law by evaluating interconnections on multi-core processors. The Journal of Supercomputing, 66(1):305-319, 2013.</li>
+				<li>Develop front-end system control hardware (FPGA) and software (Python)</li>
 			</ul>
-
-			<h3>Project Experiences and Skills</h3>
+			<li>Square Kilometre Array - Low-Frequency Aperture Array (LFAA)</li>
 			<ul>
-				<li>Energy and Environmental Sustainability Solutions for Megacities (E2S2) by Shanghai Jiao Tong University (SJTU) and National University of Singapore (NUS) in Campus for Research Excellence and Technological Enterprise (CREATE) program of Singapore National Research Foundation (R-706-000-101-281 and R-252-000-496-281)</li>
-					<ul>
-						<li>Develop an index for large scale time series with Java</li>
-						<li>Manage and analyse large scale time series in Hadoop File System with Scala/Spark</li>
-						<li>Optimizing resource allocation on water supply network against intentional attacks using Genetic Algorithm. Develop Genetic Algorithm with Matlab</li>
-						<li>Overlapping community detection in complex networks. Develop community detecting algorithm with C/C++</li>
-					</ul>
-				<li>Development of new-concept, high-efficiency computer architecture and system. National High-Technology Research and Development Program of China (863 Program, No.2009AA012201 CFA2009SHJD01 2009-2011, No.2009AA012201 CFA2011SHJD01 2011-2012, No.2015AA050204 2015-2018)</li>
-					<ul>
-						<li>Prototype hardware pipelines and accelerators with Matlab Simulink and Xilinx System Generator</li>
-						<li>Implement embedded systems and software applications on FPGA</li>
-						<li>Develop Java Optimized Processor with Verilog and VHDL</li>
-					</ul>
-				<li>Square Kilometre Array - Science Data Processor (SKA-SDP)</li>
-					<ul>
-						<li>Wrote an event-driven simulator (Java) to evaluate the performance of various scheduling policies under the different settings of data and computing resources.</li>
-						<li>Deployed SLURM on a tiny scale cluster for the verification of the scheduling policies.</li>
-					</ul>
-				<li>I2R-BYD joint research for Developing a local fleet of driverless electric taxis in Singapore</li>
-					<ul>
-						<li>Indoor vehicle localization with dead reckoning and map on smartphone. Programming with Java.</li>
-						<li>Acquire speed and odometry information from cameras of a vehicle. Programming with OpenCV and Python.</li>
-					</ul>
-				<li>Hybrid cloud computing infrastructure of China UnionPay, National Development and Reform Commission (NDRC) Project, (Grant #: C73623989020220110006, CNY 0.45M, 01/2012 – 12/2012)</li>
-					<ul>
-						<li>Deploy and maintain a tiny computer cluster, including its Linux OS, cabinet, networking, storage and electricity</li>
-						<li>Experiences with virtual machine monitor, including PowerVM, Xen and KVM</li>
-					</ul>
-				<li>Shanghai International Science and Technology Collaboration Program (Grant #: 13430710400)</li>
-				<li>Researches on key techniques supporting dynamically scalable cache coherence partition (SCCP) in manycore processor. National Natural Science Foundation of China (No.61373032, 01/2014-12/2017)</li>
+				<li>Develop Matlab code to analyze digital signal and test antenna.</li>
 			</ul>
-
-						
-			<h3>Teaching Experiences</h3>
+			<li>Square Kilometre Array - Science Data Processor (SKA-SDP)</li>
 			<ul>
-				<li>Teaching Assistant at School of Microelectronics, Shanghai Jiao Tong University</li>
-				<ul>
-					<li>Computer architecture, Fall 2010 - Spring 2012</li>
-				</ul>
+				<li>Wrote an event-driven simulator (Java) to evaluate the performance of various scheduling policies under the different settings of data and computing resources.</li>
+				<li>Deployed SLURM on a tiny scale cluster for the verification of the scheduling policies.</li>
 			</ul>
-
-			<h3>Awards and Honours</h3>
+			<li>I2R-BYD joint research for Developing a local fleet of driverless electric taxis in Singapore</li>
 			<ul>
-				<li>National scholarship for PhD students, China Scholarship Council, 2013</li>
-				<li>Weiquan Wu scholarship for PhD students, Shanghai Jiao Tong University, 2011</li>
+				<li>Indoor vehicle localization with dead reckoning and map on smartphone. Programming with Java.</li>
+				<li>Acquire speed and odometry information from cameras of a vehicle. Programming with OpenCV and Python.</li>
 			</ul>
-		</div>
-	</body>
+			<li>Hybrid cloud computing infrastructure of China UnionPay, National Development and Reform Commission (NDRC) Project, (Grant #: C73623989020220110006, CNY 0.45M, 01/2012 – 12/2012)</li>
+			<ul>
+				<li>Deploy and maintain a tiny computer cluster, including its Linux OS, cabinet, networking, storage and electricity</li>
+				<li>Experiences with virtual machine monitor, including PowerVM, Xen and KVM</li>
+			</ul>
+			<li>Shanghai International Science and Technology Collaboration Program (Grant #: 13430710400)</li>
+			<li>Researches on key techniques supporting dynamically scalable cache coherence partition (SCCP) in manycore processor. National Natural Science Foundation of China (No.61373032, 01/2014-12/2017)</li>
+		</ul>
+		<h3>Teaching Experiences</h3>
+		<ul>
+			<li>Teaching Assistant at School of Microelectronics, Shanghai Jiao Tong University</li>
+			<ul>
+			<li>Computer architecture, Fall 2010 - Spring 2012</li>
+			</ul>
+		</ul>
+		<h3>Awards and Honours</h3>
+		<ul>
+			<li>National scholarship for PhD students, China Scholarship Council, 2013</li>
+			<li>Weiquan Wu scholarship for PhD students, Shanghai Jiao Tong University, 2011</li>
+		</ul>
+	</div>
 
+</div>
+<div id="footer-placeholder"></div>
+
+</body>
 </html>
 

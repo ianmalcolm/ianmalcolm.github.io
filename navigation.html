@@ -1,0 +1,48 @@
+<div id="nav-placeholder" class="row">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Tian Huang</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+				<li><a href="index.html">About</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="publication.html">Publication</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://github.com/ianmalcolm">Follow me on Github</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<script>
+	$("nav.navbar ul.nav li").each(function(index, element) {
+			var filename = $(element).find("a").attr("href");
+			if (window.location.href.indexOf(filename)>-1){
+			$(element).addClass("active");
+			}
+			});
+	</script>
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-71750833-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	
+</div>
+~
+~
+

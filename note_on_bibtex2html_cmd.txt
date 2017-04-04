@@ -1,1 +1,2 @@
 bibtex2html -nokeywords -noabstract -nobibsource -d -r -nf pdf PDF list.bib
+bib2bib --remove pdf list.bib | bibtex2html -nokeywords -noabstract -nobibsource -d -r > list.html
